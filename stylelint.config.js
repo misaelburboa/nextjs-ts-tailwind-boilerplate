@@ -34,11 +34,11 @@ module.exports = {
         },
       },
     ],
-
-    'at-rule-no-unknown': [
+    'at-rule-no-unknown': null,
+    'scss/at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen'],
+        ignoreAtRules: ['tailwind'],
       },
     ],
   },
