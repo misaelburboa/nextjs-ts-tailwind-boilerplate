@@ -1,0 +1,14 @@
+# https://www.npmjs.com/package/lefthook
+#
+# Full guide:
+# https://github.com/evilmartians/lefthook/blob/master/docs/full_guide.md
+
+pre-commit:
+  parallel: true
+  commands:
+    "lint:scripts":
+      glob: "*.{js,jsx,ts,tsx}"
+      run: yarn eslint --ext .js,jsx,ts,tsx {staged_files}
+    "lint:styles":
+      glob: "*.{module.css,jsx,tsx}"
+      run: yarn stylelint {staged_files}
