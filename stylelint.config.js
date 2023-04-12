@@ -1,15 +1,19 @@
 module.exports = {
   extends: [
+    // Ruleset to enforce common conventions
+    // https://github.com/stylelint/stylelint-config-standard
     'stylelint-config-standard-scss',
-    'stylelint-config-prettier-scss',
 
+    // Ruleset to sort CSS properties
     // https://www.npmjs.com/package/stylelint-a11y
     'stylelint-a11y/recommended',
 
-    // https://www.npmjs.com/package/stylelint-config-css-modules
+    // Ruleset to accept CSS Modules specific syntax
+    // https://github.com/pascalduez/stylelint-config-css-modules
     'stylelint-config-css-modules',
 
-    // https://www.npmjs.com/package/stylelint-config-recess-order
+    // Ruleset to sort CSS properties
+    // https://github.com/stormwarning/stylelint-config-recess-order
     'stylelint-config-recess-order',
   ],
   plugins: [
